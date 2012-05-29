@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<module name="@PACKAGE@" disabled="no" version="@VERSION@"
+    release="@RELEASE@">
+
+    <description>Dynacase CKEditor Plugins</description>
+
+    <requires>
+        <module name="dynacase-platform" version="3.2" comp="ge" />
+    </requires>
+
+    <post-install>
+        <process command="programs/record_application @APPNAME@" />
+        <process command="programs/update_catalog" />
+        <process command='./wsh.php --api=importDocuments --file=./@APPNAME@/access.csv'>
+          <label lang='en'>Importing ACCESS</label>
+        </process>
+    </post-install>
+
+    <post-upgrade>
+        <process command="programs/pre_migration @APPNAME@" />
+        <process command="programs/record_application @APPNAME@" />
+        <process command="programs/post_migration @APPNAME@" />
+        <process command="programs/update_catalog" />
+        <process command='./wsh.php --api=importDocuments --file=./@APPNAME@/access.csv'>
+          <label lang='en'>Importing ACCESS</label>
+        </process>
+    </post-upgrade>
+
+    <changelog>
+        <version number="1.0" date="2012-05-25">
+            <change title="Creation" />
+        </version>
+    </changelog>
+
+</module>
