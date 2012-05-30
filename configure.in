@@ -27,7 +27,12 @@ AC_ARG_WITH(pubrule, [  --with-pubrule=dir	Path to PubRule], PUBRULE=$withval)
 if test "x$PUBRULE" != "x"; then
   PUBRULEDIR=$PUBRULE
 else
-  PUBRULEDIR=`pwd`
+  if test "x$PUBRULEDIR" == "x"; then
+     AC_CHECK_FILE($HOME/anakeen/devtools/PubRule, PUBRULEDIR=$HOME/anakeen/devtools/)
+     if test "x$PUBRULEDIR" = "x"; then
+          PUBRULEDIR=`pwd`
+     fi
+  fi
 fi
 AC_CHECK_FILE($PUBRULEDIR/PubRule, PUBRULE=$PUBRULEDIR)
 if test "x$PUBRULE" = "x"; then
