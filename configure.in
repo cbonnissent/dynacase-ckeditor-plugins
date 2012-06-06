@@ -17,7 +17,7 @@ VERSION=`cat VERSION`
 AC_SUBST(RELEASE)
 RELEASE=`cat RELEASE`
 AC_SUBST(PACKAGE)
-PACKAGE=dynacase-ckeditor_plugins
+PACKAGE=dynacase-ckeditor-plugins
 AC_SUBST(APPNAME)
 APPNAME=CKEDITOR_PLUGINS
 ac_default_prefix=/usr/share/what
