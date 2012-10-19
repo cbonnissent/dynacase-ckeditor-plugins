@@ -5,7 +5,7 @@
     <description>Dynacase CKEditor Plugins</description>
 
     <requires>
-        <module name="dynacase-platform" version="3.2" comp="ge" />
+        <module name="dynacase-core" version="3.2" comp="ge" />
     </requires>
 
     <post-install>
