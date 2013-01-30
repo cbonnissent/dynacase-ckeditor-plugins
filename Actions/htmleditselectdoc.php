@@ -10,13 +10,13 @@ function htmleditselectdoc(Action $action)
     
     $usage = new ActionUsage($action);
     
-    $fam = $usage->addNeeded("fam", "fam");
-    $docrev = $usage->addOption("docrev", "docrev", array() , "latest");
-    $initid = $usage->addOption("initid", "initid");
-    $title = $usage->addOption("title", "title");
-    $filter = $usage->addOption("filter", "filter", array() , "");
+    $fam = $usage->addRequiredParameter("fam", "fam");
+    $docrev = $usage->addOptionalParameter("docrev", "docrev", array() , "latest");
+    $initid = $usage->addOptionalParameter("initid", "initid");
+    $title = $usage->addOptionalParameter("title", "title");
+    $filter = $usage->addOptionalParameter("filter", "filter", array() , "");
     
-    $usage->strict(false);
+    $usage->setStrictMode(false);
     
     $usage->verify();
     
