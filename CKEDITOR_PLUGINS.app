@@ -2,8 +2,8 @@
 
 $app_desc = array(
     "name" => "CKEDITOR_PLUGINS",
-    "short_name" => N_("dynacase-ckeditor-plugins name"),
-    "description" => N_("dynacase-ckeditor-plugins description"),
+    "short_name" => N_("CKEDITOR_PLUGINS:dynacase-ckeditor-plugins name"),
+    "description" => N_("CKEDITOR_PLUGINS:dynacase-ckeditor-plugins description"),
     "access_free" => "N",
     "icon" => "dynacase-ckeditor-plugins.png",
     "displayable" => "N",
@@ -14,14 +14,14 @@ $app_desc = array(
 $app_acl = array(
     array(
         "name" => "CKEDITOR_PLUGINS_BASIC",
-        "description" => N_("Access to basic action for CKEDITOR plugin")
+        "description" => N_("CKEDITOR_PLUGINS:Access to basic action for CKEDITOR plugin")
     )
 );
 
 $action_desc = array(
     array(
         "name" => "HTMLEDITSELECTDOC",
-        "short_name" => N_("Action to select a doc"),
+        "short_name" => N_("CKEDITOR_PLUGINS:Action to select a doc"),
         "acl" => "CKEDITOR_PLUGINS_BASIC"
     )
 );
