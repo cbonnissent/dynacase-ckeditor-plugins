@@ -30,12 +30,12 @@
         [ZONE FDL:INPUTATTRIBUTE?type=docid("[FAM]")&id=docid&jsevent=onchange="updateDcpDocument()"&esize=40&phpfile=fdl.php&phpfunc=lfamily(D,"[FAM]",CT,0,"[FILTER]"):docid,CT]
     [ENDIF FILTER]
 </form>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 [ZONE CORE:HTMLFOOT]
