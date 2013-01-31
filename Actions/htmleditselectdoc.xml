@@ -1,4 +1,4 @@
-[ZONE CORE:HTMLHEAD?title=[TEXT:Link to doc]]
+[ZONE CORE:HTMLHEAD?title=[TEXT:CKEDITOR_PLUGINS:Link to doc]]
 <link rel="stylesheet" type="text/css" href="?app=FDL&action=ALLEDITCSS">
 <script src="?app=FDL&action=ALLEDITJS"></script>
 
@@ -22,7 +22,7 @@
 </script>
 
 <form style="display:inline" name="searchDoc" >
-<label for="_ilink_docid">[TEXT: Select a document]</label>&nbsp;:&nbsp;
+<label for="_ilink_docid">[TEXT:CKEDITOR_PLUGINS:Select a document]</label>&nbsp;:&nbsp;
     [IFNOT FILTER]
         [ZONE FDL:INPUTATTRIBUTE?type=docid("[FAM]")&id=docid&jsevent=onchange="updateDcpDocument()"&esize=40]
     [ENDIF FILTER]
@@ -30,12 +30,12 @@
         [ZONE FDL:INPUTATTRIBUTE?type=docid("[FAM]")&id=docid&jsevent=onchange="updateDcpDocument()"&esize=40&phpfile=fdl.php&phpfunc=lfamily(D,"[FAM]",CT,0,"[FILTER]"):docid,CT]
     [ENDIF FILTER]
 </form>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 [ZONE CORE:HTMLFOOT]
