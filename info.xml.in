@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <module name="@PACKAGE@" disabled="no" version="@VERSION@"
-    release="@RELEASE@">
+    release="@RELEASE@" license="@LICENSE@">
 
     <description>Dynacase CKEditor Plugins</description>
 
     <requires>
         <module name="dynacase-core" version="3.2.5" comp="ge" />
+        <module name="dynacase-ckeditor" version="4.0.1" comp="ge" />
     </requires>
 
     <post-install>
@@ -25,11 +26,5 @@
           <label lang='en'>Importing ACCESS</label>
         </process>
     </post-upgrade>
-
-    <changelog>
-        <version number="1.0" date="2012-05-25">
-            <change title="Creation" />
-        </version>
-    </changelog>
 
 </module>
