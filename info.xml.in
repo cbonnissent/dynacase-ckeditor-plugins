@@ -6,7 +6,7 @@
 
     <requires>
         <module name="dynacase-core" version="3.2.5" comp="ge" />
-        <module name="dynacase-ckeditor" comp="ge" />
+        <module name="dynacase-ckeditor" version="4.0.1" comp="ge" />
     </requires>
 
     <post-install>
