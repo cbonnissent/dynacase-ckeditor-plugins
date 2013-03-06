@@ -119,15 +119,19 @@ CKEDITOR.plugins.add('doclink',
 
 CKEDITOR.plugins.setLang('doclink', 'en',
     {
-        label:'Link to documents',
-        menuLabel:'Edit link',
-        definitionError : 'The definition of the doclink is not valid (no famIdn'
+        doclink:{
+            label:'Link to documents',
+            menuLabel:'Edit link',
+            definitionError : 'The definition of the doclink is not valid (no famIdn'
+        }
     }
 );
 CKEDITOR.plugins.setLang('doclink', 'fr',
     {
-        label:"Lien vers des documents",
-        menuLabel:'Éditer le lien',
-        definitionError : 'La définition du doclink n\'est pas valide'
+        doclink:{
+            label:"Lien vers des documents",
+            menuLabel:'Éditer le lien',
+            definitionError : 'La définition du doclink n\'est pas valide'
+        }
     }
 );
